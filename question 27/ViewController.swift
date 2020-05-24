@@ -17,18 +17,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changePressed(_ sender: UIButton) {
-     let Color = getRandomColor()
-        sender.backgroundColor = Color
+        var Color = Colors()
+    sender.backgroundColor = Color.getRandomColors()
     }
     
     
     
-    private func getRandomColor () ->UIColor {
-        let randomRed = CGFloat.random(in: 0...1)
-        let randomGreen = CGFloat.random(in: 0...1)
-        let randomBlue = CGFloat.random(in: 0...1)
-        let color = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1)
-        return color
-    }
+  
 }
 

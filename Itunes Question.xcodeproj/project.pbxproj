@@ -13,6 +13,10 @@
 		166FEBD7247AA46B003A05AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166FEBD5247AA46B003A05AD /* Main.storyboard */; };
 		166FEBD9247AA46F003A05AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166FEBD8247AA46F003A05AD /* Assets.xcassets */; };
 		166FEBDC247AA46F003A05AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166FEBDA247AA46F003A05AD /* LaunchScreen.storyboard */; };
+		166FEBE4247AA706003A05AD /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166FEBE3247AA706003A05AD /* NetWork.swift */; };
+		166FEBE6247AAA83003A05AD /* ImageCashed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166FEBE5247AAA83003A05AD /* ImageCashed.swift */; };
+		166FEBE8247AABAC003A05AD /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166FEBE7247AABAC003A05AD /* Track.swift */; };
+		166FEBEA247AAE72003A05AD /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166FEBE9247AAE72003A05AD /* TrackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		166FEBD8247AA46F003A05AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		166FEBDB247AA46F003A05AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		166FEBDD247AA46F003A05AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166FEBE3247AA706003A05AD /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		166FEBE5247AAA83003A05AD /* ImageCashed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashed.swift; sourceTree = "<group>"; };
+		166FEBE7247AABAC003A05AD /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		166FEBE9247AAE72003A05AD /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 				166FEBCF247AA46B003A05AD /* AppDelegate.swift */,
 				166FEBD1247AA46B003A05AD /* SceneDelegate.swift */,
 				166FEBD3247AA46B003A05AD /* ViewController.swift */,
+				166FEBE9247AAE72003A05AD /* TrackCell.swift */,
 				166FEBD5247AA46B003A05AD /* Main.storyboard */,
+				166FEBE3247AA706003A05AD /* NetWork.swift */,
+				166FEBE7247AABAC003A05AD /* Track.swift */,
+				166FEBE5247AAA83003A05AD /* ImageCashed.swift */,
 				166FEBD8247AA46F003A05AD /* Assets.xcassets */,
 				166FEBDA247AA46F003A05AD /* LaunchScreen.storyboard */,
 				166FEBDD247AA46F003A05AD /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166FEBEA247AAE72003A05AD /* TrackCell.swift in Sources */,
 				166FEBD4247AA46B003A05AD /* ViewController.swift in Sources */,
 				166FEBD0247AA46B003A05AD /* AppDelegate.swift in Sources */,
+				166FEBE6247AAA83003A05AD /* ImageCashed.swift in Sources */,
+				166FEBE4247AA706003A05AD /* NetWork.swift in Sources */,
 				166FEBD2247AA46B003A05AD /* SceneDelegate.swift in Sources */,
+				166FEBE8247AABAC003A05AD /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

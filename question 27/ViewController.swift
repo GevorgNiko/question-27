@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+   
     @IBOutlet weak var outletButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +17,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changePressed(_ sender: UIButton) {
-        var Color = Colors()
-    sender.backgroundColor = Color.getRandomColors()
+         var colors: [Colors] = SavingData.shared.read()
+        var Color = Colors(blue: Float.random(in: 0...1), red:
+            Float.random(in: 0...1), green: Float.random(in: 0...1))
+        var actualColor = Color.getRandomColors()
+         
+        if colors.contains(where: { (color) -> Bool in
+           Color == color
+        }) {
+            actualColor = Color.getRandomColors()       }
+        else {
+            sender.backgroundColor = actualColor
+            colors.append(Color)
+             SavingData.shared.write(colors)
+          
+        }
+   print(colors)
+       
     }
     
     
